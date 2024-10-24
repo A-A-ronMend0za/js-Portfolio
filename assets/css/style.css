@@ -1,7 +1,7 @@
 * {
   background-color: black;
   color: darkgray;
-  /* border: solid, grey; */
+  border: solid, grey;
 }
 
 body {
@@ -11,10 +11,23 @@ body {
   justify-content: space-between;
 }
 
+.bodyContent {
+  display: flex;
+  justify-content: space-between;
+}
+
 footer {
   display: flex;
   justify-content: center;
   padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+.profilePic {
+  width: 300px;
 }
 
 i {
@@ -24,4 +37,8 @@ i {
 .plugs {
   display: flex;
   justify-content: center;
+}
+
+.xp {
+  min-width: 66%;
 }
