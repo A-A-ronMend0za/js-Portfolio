@@ -25,7 +25,16 @@ footer {
 }
 
 section {
-  padding: 20px;
+  padding: 10px 15px;
+}
+
+.location {
+  display: flex;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 .profilePic {
@@ -33,12 +42,19 @@ section {
 }
 
 i {
-  padding: 24px;
+  padding: 5px 15px;
+  display: flex;
+  align-content: center;
 }
 
 .plugs {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  padding-top: 30px;
+}
+
+.about {
+  padding-left: 50px;
 }
 
 .xp {
