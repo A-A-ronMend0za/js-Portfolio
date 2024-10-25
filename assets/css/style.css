@@ -19,7 +19,7 @@ body {
 .row {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 footer {
@@ -37,6 +37,7 @@ section {
 .location {
   display: flex;
   flex-direction: row;
+  padding-top: 50px;
 }
 
 h1 {
@@ -48,14 +49,18 @@ h1 {
 }
 
 i {
-  padding: 5px 15px;
   display: flex;
   align-content: center;
+  padding: 1px;
+}
+
+.iconPadding {
+  padding: 5px 15px;
 }
 
 .plugs {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-top: 30px;
 }
 
@@ -89,7 +94,7 @@ i {
   color: black;
   text-shadow: 0px 0px 2px blue, 0px 0px 5px white,
     0px 0px 8px rgb(248, 172, 95), 0px 0px 12px red, 0px 0px 18px yellow;
-  animation: glow 2s infinite alternate linear;
+  animation: glow 1s infinite alternate linear;
 }
 
 @keyframes glow {
@@ -99,4 +104,9 @@ i {
   100% {
     box-shadow: 0 0 5px 3px whitesmoke, 0 0 15px 8px yellow, 0 0 20px 16px red;
   }
+}
+
+.weatherMusic {
+  display: flex;
+  align-items: center;
 }
