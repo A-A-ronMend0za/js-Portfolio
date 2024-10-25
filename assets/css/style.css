@@ -18,8 +18,10 @@ body {
 
 footer {
   display: flex;
+  flex-direction: row;
   justify-content: center;
-  padding: 20px;
+  align-content: center;
+  padding: 10px;
 }
 
 section {
@@ -31,7 +33,7 @@ section {
 }
 
 i {
-  padding: 10px;
+  padding: 24px;
 }
 
 .plugs {
