@@ -63,6 +63,20 @@ i {
   padding-left: 50px;
 }
 
+.cert {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 400px;
+  height: 300px;
+  left: 400px;
+  bottom: 370px;
+}
+
+.scroll:hover .cert {
+  visibility: visible;
+}
+
 .xp {
   min-width: 66%;
 }
