@@ -1,7 +1,7 @@
 * {
   /* background-color: black; */
   color: darkgray;
-  border: solid, grey;
+  /* border: solid, grey; */
 }
 
 body {
@@ -74,14 +74,29 @@ i {
   max-width: 290px;
 }
 
-.github {
+.githubIcon:hover .githubHandle {
+  visibility: visible;
+  margin-left: -55px;
+}
+
+.twitterIcon:hover .twitterHandle {
+  visibility: visible;
+  margin-left: -140px;
+}
+
+.emailIcon:hover .emailAddress {
+  visibility: visible;
+  margin-left: -250px;
+}
+
+.githubHandle,
+.twitterHandle,
+.emailAddress {
+  visibility: hidden;
   position: absolute;
-}
-
-.twitter {
-}
-
-.email {
+  z-index: 1;
+  margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .about {
