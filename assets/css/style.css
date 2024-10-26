@@ -1,7 +1,7 @@
 * {
-  background-color: black;
+  /* background-color: black; */
   color: darkgray;
-  /* border: solid, grey; */
+  border: solid, grey;
 }
 
 body {
@@ -9,6 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-image: linear-gradient(90deg, black 15%, blueviolet);
 }
 
 .bodyContent {
@@ -20,6 +21,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
 }
 
 footer {
@@ -37,15 +39,22 @@ section {
 .location {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   padding-top: 50px;
+  max-width: 300px;
 }
 
 h1 {
   font-size: 30px;
 }
 
+p {
+  font-size: 24px;
+}
+
 .profilePic {
   width: 300px;
+  border-radius: 20px;
 }
 
 i {
@@ -62,6 +71,17 @@ i {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
+  max-width: 290px;
+}
+
+.github {
+  position: absolute;
+}
+
+.twitter {
+}
+
+.email {
 }
 
 .about {
@@ -75,7 +95,7 @@ i {
   width: 400px;
   height: 300px;
   left: 400px;
-  bottom: 370px;
+  bottom: 605px;
 }
 
 .scroll:hover .cert {
@@ -87,6 +107,7 @@ i {
 }
 
 .blackhole {
+  background-color: black;
   height: 200px;
   width: 200px;
   border-radius: 100%;
@@ -109,4 +130,7 @@ i {
 .weatherMusic {
   display: flex;
   align-items: center;
+  height: 50px;
+  border: solid 10px;
+  border-radius: 20px;
 }
