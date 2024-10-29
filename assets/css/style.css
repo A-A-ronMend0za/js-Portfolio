@@ -9,7 +9,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-image: linear-gradient(90deg, black 15%, blueviolet);
+  background-image: linear-gradient(
+    90deg,
+    black 22%,
+    teal 32%,
+    rgb(103, 32, 171)
+  );
 }
 
 .bodyContent {
@@ -174,7 +179,7 @@ i {
   height: 200px;
   width: 200px;
   border-radius: 100%;
-  font-size: 30px;
+  font-size: 0px;
   color: black;
   text-shadow: 0px 0px 2px blue, 0px 0px 5px white,
     0px 0px 8px rgb(248, 172, 95), 0px 0px 12px red, 0px 0px 18px yellow;
@@ -184,6 +189,7 @@ i {
 .blackhole:hover {
   transform: scale(1.3);
   transition-duration: 0.5s;
+  font-size: 20px;
 }
 
 @keyframes glow {
@@ -198,12 +204,46 @@ i {
 .weatherMusic {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 50px;
   border: solid 10px;
   border-radius: 20px;
+  color: black;
+  box-shadow: 0 0 5px 3px rgb(2, 202, 202), 0 0 15px 5px white;
+  background-color: black;
 }
 
 .weatherMusic:hover {
   transform: scale(1.3);
   transition-duration: 0.5s;
+}
+.weatherMusic:hover .wmTextTop {
+  visibility: visible;
+}
+.weatherMusic:hover .wmTextBtm {
+  visibility: visible;
+}
+
+.wmIcon {
+  color: rgb(3, 210, 210);
+  text-shadow: 0 0 8px white;
+}
+
+.wmTextTop {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  font-size: 24px;
+  padding-bottom: 130px;
+  text-shadow: 0 0 2px black, 0 0 4px aqua, 0 0 16px aqua;
+}
+.wmTextBtm {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  color: black;
+  font-size: 24px;
+  padding-top: 130px;
+  text-shadow: 0 0 2px black, 0 0 4px aqua, 0 0 16px aqua;
 }
