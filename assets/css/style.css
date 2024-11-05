@@ -83,6 +83,21 @@ p {
   border-radius: 20px;
 }
 
+.voteSticker {
+  /* display: none; */
+  position: absolute;
+  z-index: -1;
+  width: 120px;
+  height: 120px;
+  align-self: center;
+  margin-left: 400px;
+}
+
+.stickerBox {
+  display: flex;
+  flex-direction: row;
+}
+
 i {
   display: flex;
   align-content: center;
