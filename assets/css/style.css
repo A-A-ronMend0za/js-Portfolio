@@ -84,13 +84,35 @@ p {
 }
 
 .voteSticker {
-  /* display: none; */
   position: absolute;
-  z-index: -1;
   width: 120px;
   height: 120px;
   align-self: center;
   margin-left: 400px;
+}
+
+.Z1 {
+  z-index: -1;
+  animation: fadeOpacity 4s linear 4s 1 normal forwards;
+}
+.Z2 {
+  z-index: -2;
+  filter: invert(100%);
+  animation: fadeOpacity 4s linear 8s 1 normal forwards;
+}
+.Z3 {
+  z-index: -3;
+  filter: grayscale(100%);
+  animation: fadeOpacity 6s linear 12s 1 normal forwards;
+}
+
+@keyframes fadeOpacity {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
 }
 
 .stickerBox {
