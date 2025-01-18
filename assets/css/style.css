@@ -160,7 +160,7 @@ i {
 .twitterIcon:hover .twitterHandle {
   visibility: visible;
   margin-left: -110px;
-  color: rgb(191, 191, 191);
+  color: rgb(69, 18, 18);
 }
 
 .blueskyIcon:hover .blueskyHandle {
