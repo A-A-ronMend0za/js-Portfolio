@@ -138,13 +138,14 @@ i {
   display: flex;
   justify-content: space-around;
   padding-top: 30px;
-  max-width: 260px;
+  max-width: 280px;
 }
 
 .githubIcon:hover,
 .twitterIcon:hover,
 .emailIcon:hover,
-.scrollIcon:hover {
+.scrollIcon:hover,
+.blueskyIcon:hover {
   transform: scale(1.3);
   color: aliceblue;
   text-shadow: 0 0 5px aliceblue;
@@ -152,24 +153,31 @@ i {
 
 .githubIcon:hover .githubHandle {
   visibility: visible;
-  margin-left: -55px;
+  margin-left: -50px;
   color: rgb(3, 217, 3);
 }
 
 .twitterIcon:hover .twitterHandle {
   visibility: visible;
-  margin-left: -130px;
+  margin-left: -110px;
+  color: rgb(191, 191, 191);
+}
+
+.blueskyIcon:hover .blueskyHandle {
+  visibility: visible;
+  margin-left: -180px;
   color: aqua;
 }
 
 .emailIcon:hover .emailAddress {
   visibility: visible;
-  margin-left: -200px;
+  margin-left: -220px;
   color: red;
 }
 
 .githubHandle,
 .twitterHandle,
+.blueskyHandle,
 .emailAddress {
   visibility: hidden;
   position: absolute;
@@ -177,7 +185,7 @@ i {
   margin-top: 40px;
   font-size: 25px;
   font-family: Arial, Helvetica, sans-serif;
-  min-width: 200px;
+  min-width: 400px;
 }
 
 .about {
